@@ -54,7 +54,7 @@ struct RuiGlobals
 	float rotationMatrixA[4];
 	float rotationMatrixB[4];
 	float rotationMatrixC[4];
-	float localPlayerPos[3];
+	Vector3 localPlayerPos[3];
 	float screenWidth;
 	float screenHeight;
 	_BYTE gap_48[64];
