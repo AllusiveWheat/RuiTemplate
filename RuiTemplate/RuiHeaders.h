@@ -54,6 +54,9 @@ struct RuiGlobals
 	float rotationMatrixA[4];
 	float rotationMatrixB[4];
 	float rotationMatrixC[4];
+	_DWORD dword_30;
+	_DWORD dword_34;
+	_DWORD dword_38;
 	Vector3 localPlayerPos[3];
 	float screenWidth;
 	float screenHeight;
@@ -79,6 +82,8 @@ struct RuiGlobals
 	_DWORD dword_DC;
 	float float_E0; //match xp gained?
 	_DWORD dword_E4; // bool for when big thing like "titan ready" in the middle of screen
+	_BYTE gap_E8[8];
+
 };
 
 
