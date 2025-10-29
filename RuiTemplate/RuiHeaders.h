@@ -12,19 +12,19 @@ typedef long long _QWORD;
 typedef char _BYTE;
 
 
-struct vector2 {
+struct Vector2 {
 	float x;
 	float y;
 };
 
-struct vector3 {
+struct Vector3 {
 
 	float x;
 	float y;
 	float z;
 };
 
-struct color {
+struct Color {
 	float red;
 	float green;
 	float blue;
@@ -51,45 +51,41 @@ static_assert(sizeof(unknownGlobalsStruct)==0x40);
 
 struct RuiGlobals
 {
-	_BYTE gap_0[48];
+	float rotationMatrixA[4];
+	float rotationMatrixB[4];
+	float rotationMatrixC[4];
 	_DWORD dword_30;
 	_DWORD dword_34;
 	_DWORD dword_38;
-	float localPlayerPos[3];
+	Vector3 localPlayerPos[3];
 	float screenWidth;
 	float screenHeight;
-	unknownGlobalsStruct unkGlob;
-	_QWORD qword_90;
+	_BYTE gap_48[64];
+	uint64_t frameTime;
 	float currentTime;
 	_BYTE gap_9C[4];
 	int dword_A0;
-	_BYTE gap_A4[4];
+	int isConsole;
 	int dword_A8;
-	_BYTE gap_AC[4];
+	int dword_AC;
 	int dword_B0;
 	int dword_B4;
-	float float_B8;
+	float globalAdsFrac; //adsfrac
 	float float_BC;
 	float float_C0;
-	float float_C4;
+	int dword_C4;
 	float float_C8;
 	float float_CC;
-	float float_D0;
-	float float_D4;
-	float float_D8;
-	float float_DC;
-	float float_E0;
-	_DWORD dword_E4;
+	_DWORD dword_D0;
+	_DWORD dword_D4;
+	_DWORD dword_D8;
+	_DWORD dword_DC;
+	float float_E0; //match xp gained?
+	_DWORD dword_E4; // bool for when big thing like "titan ready" in the middle of screen
 	_BYTE gap_E8[8];
+
 };
 
-
-static_assert(offsetof(RuiGlobals,localPlayerPos)==0x3C);
-static_assert(offsetof(RuiGlobals,screenWidth)==0x48);
-static_assert(offsetof(RuiGlobals,screenHeight)==0x4C);
-static_assert(offsetof(RuiGlobals,unkGlob)==0x50);
-static_assert(offsetof(RuiGlobals,qword_90)==0x90);
-static_assert(offsetof(RuiGlobals,currentTime)==0x98);
 
 struct RuiInstance
 {
