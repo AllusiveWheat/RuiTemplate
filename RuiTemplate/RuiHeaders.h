@@ -124,7 +124,7 @@ struct RuiFunctions_t
 	int (__fastcall *LoadAsset)(RuiInstance *a1, const char *assetPath);
 	const char *(__fastcall *unknown_16)(RuiInstance *a1, int a2);
 	float (__fastcall *map_v1)(RuiInstance *a1, __int64 a2, float a3);
-	__m128 (__fastcall *unknown_18)(__int64 a1, __int64 a2, float a3);
-	__m128 (__fastcall *unknown_19)(__int64 a1, __int64 a2, __int64 a3);
-	__m128 (__fastcall *unknown_20)(__int64 a1, __int64 a2, __int64 a3);
+	__m128 (__fastcall *map_v2)(__int64 a1, __int64 a2, float a3);
+	__m128 (__fastcall *map_v3)(__int64 a1, __int64 a2, __int64 a3);
+	__m128 (__fastcall *map_v4)(__int64 a1, __int64 a2, __int64 a3);
 };
