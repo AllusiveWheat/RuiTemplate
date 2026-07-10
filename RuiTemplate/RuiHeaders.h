@@ -50,6 +50,7 @@ struct unknownGlobalsStruct
 static_assert(sizeof(unknownGlobalsStruct)==0x40);
 
 
+
 struct RuiGlobals
 {
 	_BYTE localToWorldMatrix[48];
