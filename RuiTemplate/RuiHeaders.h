@@ -52,19 +52,15 @@ static_assert(sizeof(unknownGlobalsStruct)==0x40);
 
 struct RuiGlobals
 {
-	float rotationMatrixA[4];
-	float rotationMatrixB[4];
-	float rotationMatrixC[4];
-	_DWORD dword_30;
-	_DWORD dword_34;
-	_DWORD dword_38;
-	Vector3 localPlayerPos[3];
+	_BYTE localToWorldMatrix[48];
+	Vector3 camOriginLocal;
+	Vector3 localPlayerPos;
 	float screenWidth;
 	float screenHeight;
 	_BYTE gap_48[64];
 	uint64_t frameTime;
 	float currentTime;
-	_BYTE gap_9C[4];
+	float uiTime;
 	int isKillReplay;
 	int isUsingController;
 	int isAlive;
@@ -72,11 +68,11 @@ struct RuiGlobals
 	int isMenuOpen;
 	int isPhaseShifted;
 	float globalAdsFrac; //adsfrac
-  	Vector3 friendlyTeamColor;
-  	Vector3 enemyTeamColor;
-  	Vector3 partyTeamColor;
-  	float announcementChangeTime;
-   	int announcementIsActive;
+	Vector3 friendlyTeamColor;
+	Vector3 enemyTeamColor;
+	Vector3 partyTeamColor;
+	float announcementChangeTime;
+	int announcementIsActive;
 };
 
 
