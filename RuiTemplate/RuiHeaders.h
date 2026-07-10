@@ -64,26 +64,19 @@ struct RuiGlobals
 	uint64_t frameTime;
 	float currentTime;
 	_BYTE gap_9C[4];
-	int dword_A0;
-	int isConsole;
-	int dword_A8;
-	int dword_AC;
-	int dword_B0;
-	int dword_B4;
+	int isKillReplay;
+	int isUsingController;
+	int isAlive;
+	int isSpectating;
+	int isMenuOpen;
+	int isPhaseShifted;
 	float globalAdsFrac; //adsfrac
-	float float_BC;
-	float float_C0;
-	int dword_C4;
-	float float_C8;
-	float float_CC;
-	_DWORD dword_D0;
-	_DWORD dword_D4;
-	_DWORD dword_D8;
-	_DWORD dword_DC;
-	float float_E0; //match xp gained?
-	_DWORD dword_E4; // bool for when big thing like "titan ready" in the middle of screen
-	_BYTE gap_E8[8];
-
+	float globalAdsFrac;
+  	Vector3 friendlyTeamColor;
+  	Vector3 enemyTeamColor;
+  	Vector3 partyTeamColor;
+  	float announcementChangeTime;
+   	int announcementIsActive;
 };
 
 
