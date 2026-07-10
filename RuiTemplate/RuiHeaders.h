@@ -71,7 +71,6 @@ struct RuiGlobals
 	int isMenuOpen;
 	int isPhaseShifted;
 	float globalAdsFrac; //adsfrac
-	float globalAdsFrac;
   	Vector3 friendlyTeamColor;
   	Vector3 enemyTeamColor;
   	Vector3 partyTeamColor;
