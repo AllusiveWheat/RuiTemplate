@@ -6,6 +6,7 @@
 #include <cstddef>
 #include <stdint.h>
 #include <cmath>
+#include <algorithm>
 
 typedef int _DWORD;
 typedef long long _QWORD;
