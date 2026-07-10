@@ -100,7 +100,7 @@ struct RuiInstance
 struct RuiFunctions_t
 {
 	void (__fastcall *setHidden)(RuiInstance *a1);
-	void (__fastcall *setError)(RuiInstance *a1);
+	void (__fastcall *setNoRender)(RuiInstance *a1);
 	__int64 (__fastcall *SetErrorWithReason)(RuiInstance *a1, const char *a2);
 	__m128 *(__fastcall *GetTransformSize)(RuiInstance *a1);
 	__m128 (__fastcall *GetTextSize)(RuiInstance *a1, unsigned int a2);
